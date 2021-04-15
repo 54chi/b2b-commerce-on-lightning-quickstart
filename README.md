@@ -1,5 +1,11 @@
 # b2b-commerce-for-lightning
 
+FORK Purpose: To set the checkout-sync in the SFDX project as the DEFAULT integration checkout
+
+**Reasoning:** The async checkout relies on the SF platform event architecture, which is out of the developer's control. The checkout sync project is also simpler (so should be easier to understand) and is FASTER for small stores, making it great to understand the integrations.
+
+## Forked content below
+
 This repository has a set of useful reference implementations for the B2B Lightning projects. It is structured in 2 parts: examples and sfdx.
 
 **WARNING!** By following the setup instructions for this tool (in the examples, as well as in the sfdx section), the sharing settings of your org will be updated! See in [this folder](examples/users/sharing-settings-setup) what sharing settings will be modified and how. In addition to those, the newly created user profiles (for buyer user and guest) will have the user permissions and CRUD access object permissions automatically updated.
