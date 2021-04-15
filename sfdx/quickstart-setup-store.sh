@@ -138,7 +138,11 @@ else
 	checkoutMetaFile="experience-bundle-package/unpackaged/experiences/$communityExperienceBundleName/views/checkout.json"
 	tmpfile=$(mktemp)
 	# This determines the name of the main flow as it will always be the only flow to terminate in "Checkout.flow"
-	mainFlowName=`ls ../examples/checkout/framework/flows/*Checkout.flow | sed 's/.*flows\/\(.*\).flow/\1/'`
+	# mainFlowName=`ls ../examples/checkout/framework/flows/*Checkout.flow | sed 's/.*flows\/\(.*\).flow/\1/'`
+	
+	# 54chi (Apr.15.2021): set the mainflow name to be the "Simple B2B Checkout" instead of "Sprint 2021 Checkout"
+	mainFlowName=`ls ../examples/checkout-sync/flows/*Checkout.flow | sed 's/.*flows\/\(.*\).flow/\1/'`
+
 	sed "s/sfdc_checkout__CheckoutTemplate/$mainFlowName/g" $checkoutMetaFile > $tmpfile
 	mv -f $tmpfile $checkoutMetaFile
 

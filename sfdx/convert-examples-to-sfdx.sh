@@ -13,4 +13,6 @@ sfdx force:mdapi:convert -r ../examples/diagnostic/commerce-diagnostic-event-set
 
 sfdx force:mdapi:convert -r ../tests/integration/
 
+# 54chi (Apr.15.2021): convert the checkout sync example in addition to the async ones
+sfdx force:mdapi:convert -r ../examples/checkout-sync/
 
