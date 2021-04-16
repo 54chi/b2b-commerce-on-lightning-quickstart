@@ -10,11 +10,11 @@ The changes are limited to the shell scripts. Other than that the rest remains t
 
 In other words (or pictures), this is the checkout-sync version (everything fits in one flow):
 
-![Simple B2B checkout](./docs/simplecheckout.png "Simple B2B Checkout")
+![Simple B2B checkout](./docs/simplecheckout.PNG "Simple B2B Checkout")
 
 vs. the async one (not including the subflows):
 
-![Spring 2021 checkout](./docs/asynccheckout.png "Spring 2021 checkout")
+![Spring 2021 checkout](./docs/asynccheckout.PNG "Spring 2021 checkout")
 
 ## (Forked content below)
 
