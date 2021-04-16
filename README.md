@@ -8,6 +8,14 @@ The changes are limited to the shell scripts. Other than that the rest remains t
 
 **Reasoning:** The async checkout relies on the SF platform event architecture, which is out of the developer's control. The checkout sync project is also simpler (so should be easier to understand) and is FASTER for small stores, making it great to understand the integrations.
 
+In other words (or pictures), this is the checkout-sync version (everything fits in one flow):
+
+![Simple B2B checkout](./docs/simplecheckout.png "Simple B2B Checkout")
+
+vs. the async one (not including the subflows):
+
+![Spring 2021 checkout](./docs/asynccheckout.png "Spring 2021 checkout")
+
 ## (Forked content below)
 
 This repository has a set of useful reference implementations for the B2B Lightning projects. It is structured in 2 parts: examples and sfdx.
